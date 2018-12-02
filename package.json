@@ -1,0 +1,18 @@
+{
+  "name": "async-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohamed idbrahim",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
