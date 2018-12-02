@@ -1,4 +1,5 @@
 const express = require('express');
+const _ = require('lodash');
 const app = express();
 
 
@@ -22,8 +23,9 @@ const courses = [
 
 
     app.get('/api/courses/:id', (req, res) => {
-        let id = req.params.id;
-        res.send(id);
+        let id = +req.params.id;
+        let myCourse = _.find(courses, (course) => course.id === id);
+        res.send(myCourse);
     })
 
 app.listen(3000, () => console.log('server is running on port 3000...'))
